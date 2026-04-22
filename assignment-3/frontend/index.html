@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleStorage DApp</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <p class="eyebrow">Assignment 3</p>
+        <h1>SimpleStorage DApp</h1>
+        <p class="lead">
+          Connect MetaMask, update the value or message, and read the latest on-chain
+          state from one reusable contract.
+        </p>
+
+        <div class="toolbar">
+          <button id="connectButton">Connect Wallet</button>
+          <span id="walletStatus">Wallet not connected</span>
+        </div>
+
+        <div class="grid">
+          <label>
+            Value
+            <input id="valueInput" type="number" placeholder="Enter a number" />
+          </label>
+
+          <label>
+            Message
+            <input id="messageInput" type="text" placeholder="Enter a message" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="setValueButton">Set Value</button>
+          <button id="incrementButton">Increment Counter</button>
+          <button id="setMessageButton">Set Message</button>
+          <button id="refreshButton" class="secondary">Refresh Data</button>
+        </div>
+
+        <section class="results">
+          <h2>Contract State</h2>
+          <p><strong>Stored Value:</strong> <span id="valueOutput">-</span></p>
+          <p><strong>Counter:</strong> <span id="counterOutput">-</span></p>
+          <p><strong>Message:</strong> <span id="messageOutput">-</span></p>
+        </section>
+
+        <p id="appStatus" class="status">Waiting for user action.</p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+    <script src="./contract-config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

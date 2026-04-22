@@ -1,0 +1,19 @@
+{
+  "name": "blockchain-lab-assignments",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Clean Hardhat-based blockchain lab assignments using one reusable contract.",
+  "scripts": {
+    "compile": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat compile",
+    "clean": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat clean",
+    "test": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat test",
+    "node": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat node",
+    "deploy:local": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "set \"LOCALAPPDATA=%cd%\\.localappdata\" && hardhat run scripts/deploy.js --network amoy"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.28.6"
+  }
+}
