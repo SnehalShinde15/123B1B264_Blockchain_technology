@@ -1,7 +1,7 @@
 # Blockchain Lab Assignments
 
 Name: Snehal Shinde
-PRN-123B1b264
+PRN-123B1B264
 Course: Blockchain Lab
 
 This repository keeps the lab work intentionally simple. One reusable `SimpleStorage` contract is used across the first three assignments, and a separate minimal DAO contract is added for the fifth assignment.
